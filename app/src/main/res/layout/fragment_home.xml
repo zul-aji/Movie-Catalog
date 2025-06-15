@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/featured_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/poster_template"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <ImageView
+                    android:id="@+id/featured_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/poster_fade"
+                    app:layout_constraintBottom_toBottomOf="@+id/featured_poster"
+                    app:layout_constraintEnd_toEndOf="@+id/featured_poster"
+                    app:layout_constraintStart_toStartOf="@+id/featured_poster"
+                    app:layout_constraintTop_toTopOf="@+id/featured_poster" />
+
+                <TextView
+                    android:id="@+id/featured_title"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Featured Title"
+                    android:textColor="@color/bright_white"
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/ibm_plex_sans_bold"
+                    app:layout_constraintVertical_bias="0.4"
+                    app:layout_constraintBottom_toBottomOf="@+id/featured_poster"
+                    app:layout_constraintEnd_toEndOf="@+id/featured_poster"
+                    app:layout_constraintStart_toStartOf="@+id/featured_poster"
+                    app:layout_constraintTop_toTopOf="@+id/featured_poster" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watch"
+                    android:textColor="@color/bright_white"
+                    android:background="@drawable/input_bg_pressed"
+                    app:layout_constraintVertical_bias="0.85"
+                    app:layout_constraintBottom_toBottomOf="@+id/featured_poster"
+                    app:layout_constraintEnd_toEndOf="@+id/featured_poster"
+                    app:layout_constraintStart_toStartOf="@+id/featured_poster"
+                    app:layout_constraintTop_toTopOf="@+id/featured_poster" />
+
+                <TextView
+                    android:id="@+id/favourites_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                    android:fontFamily="@font/ibm_plex_sans_bold"
+                    android:text="@string/favourites"
+                    android:textSize="24sp"
+                    android:textColor="@color/accent"
+                    app:layout_constraintTop_toBottomOf="@+id/featured_poster"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/no_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:fontFamily="@font/ibm_plex_sans_bold"
+                    android:text="@string/no_fav"
+                    android:textSize="18sp"
+                    android:textColor="@color/accent"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_title" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fav_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginVertical="8dp"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/recycler_favourite"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_title" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/accent"
+                    android:secondaryProgressTint="@color/accent_faded"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/gallery_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/ibm_plex_sans_bold"
+                android:text="@string/gallery"
+                android:textSize="24sp"
+                android:textColor="@color/accent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gallery_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                android:layout_marginVertical="8dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/gallery_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/rv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/accent" />
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>

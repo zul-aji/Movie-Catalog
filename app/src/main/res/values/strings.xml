@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="text_logo">MovieCatalog</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="repeat_pass">Repeat the password</string>
+    <string name="birthday">Birthday</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="avatar_link">Avatar Link</string>
+    <string name="gender">Gender</string>
+    <string name="alr_acc">I already have an Account</string>
+
+    <string name="uname_mt">Username required</string>
+    <string name="email_mt">Email required</string>
+    <string name="name_mt">Name required</string>
+    <string name="pass_mt">Password required</string>
+    <string name="pass_6">Passwords must be at least 6 char</string>
+    <string name="rep_pass_mt">Re-type password</string>
+    <string name="birthday_mt">Birthday required</string>
+    <string name="gender_mt">Gender unpicked</string>
+    <string name="username_inv">Username already registered</string>
+
+    <string name="login_success">Welcome back!</string>
+    <string name="register_success">Welcome!</string>
+
+    <string name="email_invalid">Wrong email format</string>
+    <string name="pass_unmatched">Password do not match</string>
+    <string name="login_fail">Login failed</string>
+    <string name="unknown_err">Unknown error</string>
+
+    <string name="save">Save</string>
+    <string name="logout">Log out</string>
+    <string name="e_mail">E-mail</string>
+
+    <string name="watch">Watch</string>
+    <string name="favourites">Favourites</string>
+    <string name="no_fav">No Favourite Movies</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="delete_fav">Are you sure you want to remove this movie from your favorite?</string>
+    <string name="mt_rev">Review cannot be empty!</string>
+    <string name="temp_synopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="about">About</string>
+    <string name="year">Year</string>
+    <string name="country">Country</string>
+    <string name="duration">Duration</string>
+    <string name="director">Director</string>
+    <string name="budget">Budget</string>
+    <string name="fees">Fees</string>
+    <string name="age_limit">Age Limit</string>
+    <string name="genres">Genres</string>
+    <string name="reviews">Reviews</string>
+    <string name="reviews_temp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+</resources>
