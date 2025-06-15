@@ -4,8 +4,7 @@ Welcome to the **MovieCatalog** project! This Android application was developed 
 
 ![image](https://github.com/user-attachments/assets/29c738ae-88be-40fc-9a80-27a58eb7b493)
 ![image](https://github.com/user-attachments/assets/cc347ec7-fb38-4912-a18f-ccf081c17a8d)
-![image](https://github.com/user-attachments/assets/9437122c-7fb4-4f0d-809f-e6ef2981e2e3)
-![image](https://github.com/user-attachments/assets/8dcc8878-3b23-4f09-ad55-b40d165c7d36)
+![image](https://github.com/user-attachments/assets/8bd6a4fa-0c05-4e51-a2be-9ca0440566cd)
 
 ---
 
